@@ -1,10 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Intro from '../components/Intro.astro';
 ---
 
 <Layout title="Design for Scientists 2">
 	<main>
-		<h1>Design for Scientists 2</h1>
-		<p>Learn how to use visual design to communicate your research effectively to all kind of people.</p>
+		<Intro 
+			title = "Design for Scientists" 
+			body = "Learn how to use visual design to communicate your research effectively to all kind of people." 
+		/>
 	</main>
 </Layout>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		max-width: 1120px;
+		margin: 0 auto;
+		padding: 0 32px;
+	}
+</style>
