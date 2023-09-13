@@ -68,7 +68,14 @@ const { title, body } = Astro.props;
     }
 
     a:hover {
-        text-decoration: underline;
+        font-weight: 600;
+        transform: scale(1.1);
+    }
+
+    a:focus {
+        outline: none;
+        font-weight: 600;
+        transform: scale(1.1);
     }
 
     .columns {
