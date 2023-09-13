@@ -6,42 +6,42 @@ const { title, body } = Astro.props;
     <h2>Index</h2>
     <div class="columns">
         <div class="column">
-            <a class="body-l" href="#goals">Start with the goals</a>
-            <a class="body-l" href="#audience">Know your target audience</a>
-            <a class="body-l" href="#prepare">Prepare your design</a>
-            <a class="body-l" href="#words">Words are important</a>
+            <a class="body-l" href="#goals">Goals</a>
+            <a class="body-l" href="#audience">Target Audience</a>
+            <a class="body-l" href="#preparation">Preparation</a>
+            <a class="body-l" href="#writing">Writing</a>
             <p class="body-l"></p>
             <a class="body-l" href="#accessibility">Accessibility</a>
             <a class="body-l" href="#simplicity">Simplicity</a>
             <a class="body-l" href="#iteration">Iteration</a>
             <p class="body-l"></p>
-            <a class="body-l" href="#hierarchy">Visual hierarchy</a>
+            <a class="body-l" href="#hierarchy">Visual Hierarchy</a>
             <a class="body-l" href="#whitespace">Whitespace</a>
             <p class="body-l"></p>
         </div>
         <div class="column">
             <a class="body-l" href="#typography">Typography</a>
-            <a class="body-l" href="#lineheight">Line height</a>
-            <a class="body-l" href="#linelength">Line length</a>
-            <a class="body-l" href="#textalignment">Text alignment</a>
-            <a class="body-l" href="#textsize">Text size</a>
-            <a class="body-l" href="#fontweight">Font weight</a>
+            <a class="body-l" href="#lineheight">Line Height</a>
+            <a class="body-l" href="#linelength">Line Length</a>
+            <a class="body-l" href="#textalignment">Text Alignment</a>
+            <a class="body-l" href="#textsize">Text Size</a>
+            <a class="body-l" href="#fontweight">Font Weight</a>
             <a class="body-l" href="#readability">Readability</a>
             <a class="body-l" href="#typefaces">Typefaces</a>
             <p class="body-l"></p>
             <a class="body-l" href="#layout">Layout</a>
             <a class="body-l" href="#alignment">Alignment</a>
-            <a class="body-l" href="#grid">Layout grid</a>
+            <a class="body-l" href="#grid">Layout Grid</a>
             <a class="body-l" href="#space">Space</a>
-            <a class="body-l" href="#proximity">Grouping - Proximity</a>
-            <a class="body-l" href="#similarity">Grouping - Similarity</a>
-            <a class="body-l" href="#ground">Grouping - Common ground</a>
+            <a class="body-l" href="#proximity">Proximity</a>
+            <a class="body-l" href="#similarity">Similarity</a>
+            <a class="body-l" href="#ground">Common Ground</a>
             <p class="body-l"></p>
             <a class="body-l" href="#color">Color</a>
-            <a class="body-l" href="#colorpalette">Color palette</a>
-            <a class="body-l" href="#directattention">Direct attention</a>
-            <a class="body-l" href="#textonimages">Text on images</a>
-            <a class="body-l" href="#colorcontrast">Color contrast</a>
+            <a class="body-l" href="#colorpalette">Color Palette</a>
+            <a class="body-l" href="#directattention">Direct Attention</a>
+            <a class="body-l" href="#textonimages">Text on Images</a>
+            <a class="body-l" href="#colorcontrast">Color Contrast</a>
         </div>
     </div>
 </section>
@@ -51,8 +51,12 @@ const { title, body } = Astro.props;
         width: 100%;
     }
 
+    h2 {
+        margin-bottom: 80px;
+    }
+
     a {
-        color: hsl(0, 0%, 20%);
+        color: hsl(0, 0%, 0%);
         text-decoration: none;
     }
 
@@ -68,14 +72,11 @@ const { title, body } = Astro.props;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
-        margin-top: 48px;
     }
-
 
     .column {
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
-
 </style>
