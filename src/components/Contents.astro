@@ -56,8 +56,11 @@ const { title, body } = Astro.props;
     }
 
     a {
+        width: fit-content;
         color: hsl(0, 0%, 0%);
         text-decoration: none;
+        transition: all 0.04s ease-in;
+        line-height: 1.8;
     }
 
     p:before {
@@ -77,6 +80,6 @@ const { title, body } = Astro.props;
     .column {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 12px;
     }
 </style>
