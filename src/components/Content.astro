@@ -1,0 +1,25 @@
+---
+const { title } = Astro.props;
+---
+
+<section>
+    <h2 class="heading-m">{ title }</h2>
+    <div>
+        <slot>
+    </div>
+</section>
+
+<style>
+    section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr minmax(480px, 1fr);
+        gap: 32px;
+    }
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+</style>

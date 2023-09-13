@@ -16,25 +16,34 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+ul {
+    padding-inline-start: 24px;
+}
+
+li {
+    padding-inline-start: 8px;
+    margin-bottom: 0.2em;
+}
+
 .heading-xl {
     font-size: 60px;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.heading-l {
+.heading-l, h1 {
     font-size: 48px;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.heading-m {
+.heading-m, h2 {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.heading-s {
+.heading-s, h3 {
     font-size: 32px;
     font-weight: 700;
     line-height: 1.1;
@@ -52,7 +61,7 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
-.body-m {
+.body-m, p, li {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
