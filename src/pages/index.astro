@@ -1,7 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Intro from "../components/Intro.astro";
-import Content from "../components/Content.astro";
+import TextBlock from "../components/TextBlock.astro";
+import Contents from "../components/Contents.astro";
 ---
 
 <Layout title="Design for Scientists 2">
@@ -10,7 +11,7 @@ import Content from "../components/Content.astro";
       body="Learn how to use visual design to communicate your research effectively to all kind of people."
 	/>
 
-    <Content title="Read this first">
+    <TextBlock title="Read this first">
 		<p>This guide is driven by the idea that information should be accessible to as many people as possible with the least amount of effort needed to consume it.</p>
 		<p>It is centred around accessibility and simplicity.</p>
 		<div>
@@ -21,5 +22,7 @@ import Content from "../components/Content.astro";
 				<li>Combine concepts and elements effectively</li>
 			</ul>
 		</div>
-    </Content>
+    </TextBlock>
+
+	<Contents />
 </Layout>

@@ -1,0 +1,81 @@
+---
+const { title, body } = Astro.props;
+---
+
+<section>
+    <h2>Index</h2>
+    <div class="columns">
+        <div class="column">
+            <a class="body-l" href="#goals">Start with the goals</a>
+            <a class="body-l" href="#audience">Know your target audience</a>
+            <a class="body-l" href="#prepare">Prepare your design</a>
+            <a class="body-l" href="#words">Words are important</a>
+            <p class="body-l"></p>
+            <a class="body-l" href="#accessibility">Accessibility</a>
+            <a class="body-l" href="#simplicity">Simplicity</a>
+            <a class="body-l" href="#iteration">Iteration</a>
+            <p class="body-l"></p>
+            <a class="body-l" href="#hierarchy">Visual hierarchy</a>
+            <a class="body-l" href="#whitespace">Whitespace</a>
+            <p class="body-l"></p>
+        </div>
+        <div class="column">
+            <a class="body-l" href="#typography">Typography</a>
+            <a class="body-l" href="#lineheight">Line height</a>
+            <a class="body-l" href="#linelength">Line length</a>
+            <a class="body-l" href="#textalignment">Text alignment</a>
+            <a class="body-l" href="#textsize">Text size</a>
+            <a class="body-l" href="#fontweight">Font weight</a>
+            <a class="body-l" href="#readability">Readability</a>
+            <a class="body-l" href="#typefaces">Typefaces</a>
+            <p class="body-l"></p>
+            <a class="body-l" href="#layout">Layout</a>
+            <a class="body-l" href="#alignment">Alignment</a>
+            <a class="body-l" href="#grid">Layout grid</a>
+            <a class="body-l" href="#space">Space</a>
+            <a class="body-l" href="#proximity">Grouping - Proximity</a>
+            <a class="body-l" href="#similarity">Grouping - Similarity</a>
+            <a class="body-l" href="#ground">Grouping - Common ground</a>
+            <p class="body-l"></p>
+            <a class="body-l" href="#color">Color</a>
+            <a class="body-l" href="#colorpalette">Color palette</a>
+            <a class="body-l" href="#directattention">Direct attention</a>
+            <a class="body-l" href="#textonimages">Text on images</a>
+            <a class="body-l" href="#colorcontrast">Color contrast</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        width: 100%;
+    }
+
+    a {
+        color: hsl(0, 0%, 20%);
+        text-decoration: none;
+    }
+
+    p:before {
+        content: "\00a0";
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        margin-top: 48px;
+    }
+
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+</style>
