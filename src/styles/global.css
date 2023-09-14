@@ -34,15 +34,18 @@
     --font-size-xs: 20px;
     --font-size-2xs: 18px;
 
-    --spacing-2xs: 4px;
-    --spacing-xs: 8px;
+    --spacing-3xs: 4px;
+    --spacing-2xs: 8px;
+    --spacing-xs: 12px;
     --spacing-s: 16px;
     --spacing-m: 24px;
     --spacing-l: 32px;
-    --spacing-xl: 48px;
-    --spacing-2xl: 64px;
-    --spacing-3xl: 96px;
-    --spacing-4xl: 128px;
+    --spacing-xl: 40px;
+    --spacing-2xl: 60px;
+    --spacing-3xl: 80px;
+    --spacing-4xl: 120px;
+    --spacing-5xl: 160px;
+    --spacing-6xl: 240px;
 }
 
 * {

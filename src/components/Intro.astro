@@ -1,12 +1,28 @@
 ---
-const { title, body } = Astro.props;
+import Block from "./Block.astro";
 ---
 
 <section>
-    <h1 class="heading-l">{ title }</h1>
-    <p class="body-l">{ body }</p>
+    <h1 class="heading-l">Design for Scientists</h1>
+    <p class="body-l">Learn how to use visual design to communicate your research effectively to all kind of people.</p>
 
     <div class="image"></div>
+
+    <Block>
+        <h3 slot = "first">Read this first</h3>
+        <div slot = "second" class="inner">
+            <p>This guide is driven by the idea that information should be accessible to as many people as possible with the least amount of effort needed to consume it.</p>
+            <p>It is centred around accessibility and simplicity.</p>
+            <div>
+                <p>You will learn about the following:</p>
+                <ul>
+                    <li>Fundamental concepts of visual design</li>
+                    <li>Elements of visual design and best practices</li>
+                    <li>Combine concepts and elements effectively</li>
+                </ul>
+            </div>
+        </div>
+    </Block>
 </section>
 
 <style>
@@ -15,11 +31,11 @@ const { title, body } = Astro.props;
     }
 
     section h1 {
-        margin-bottom: 24px;
+        margin-bottom: var(--spacing-m);
     }
 
-    section p {
-        margin-bottom: 100px;
+    section > p {
+        margin-bottom: var(--spacing-4xl);
         max-width: 600px;
     }
 
@@ -27,6 +43,13 @@ const { title, body } = Astro.props;
         width: 100%;
         height: 320px;
         background-color: hsl(0, 0%, 90%);
-        border-radius:20px
+        border-radius: 20px;
+        margin-bottom: var(--spacing-5xl);
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
 </style>

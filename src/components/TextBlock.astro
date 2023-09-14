@@ -1,20 +1,19 @@
 ---
+import Block from "./Block.astro";
 const { title, id } = Astro.props;
 ---
 
-<div class="container" id={id}>
-    <h3>{ title }</h3>
-    <div class="inner">
-        <slot>
-    </div>
+<div class="textblock" id={id}>
+    <Block>
+        <h3 slot = "first" >{ title }</h3>
+        <div slot = "second" class="inner">
+            <slot>
+        </div>
+    </Block>
 </div>
 
 <style>
-    .container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
+    .textblock {
         padding-top: 80px;
     }
     

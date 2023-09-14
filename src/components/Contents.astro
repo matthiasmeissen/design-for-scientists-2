@@ -52,7 +52,7 @@ const { title, body } = Astro.props;
     }
 
     h2 {
-        margin-bottom: 80px;
+        margin-bottom: var(--spacing-3xl);
     }
 
     a {
@@ -68,25 +68,25 @@ const { title, body } = Astro.props;
     }
 
     a:hover {
-        font-weight: 600;
+        font-weight: var(--font-weight-bold);
         transform: scale(1.1);
     }
 
     a:focus {
         outline: none;
-        font-weight: 600;
+        font-weight: var(--font-weight-bold);
         transform: scale(1.1);
     }
 
     .columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 32px;
+        gap: var(--spacing-l);
     }
 
     .column {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: var(--spacing-xs);
     }
 </style>

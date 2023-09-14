@@ -1,0 +1,17 @@
+---
+const { type } = Astro.props;
+---
+
+<div class="block">
+    <slot name="first" />
+    <slot name="second"/>
+</div>
+
+<style>
+    .block {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+</style>
