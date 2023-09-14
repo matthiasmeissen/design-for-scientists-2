@@ -2,15 +2,15 @@
 const { title, id } = Astro.props;
 ---
 
-<section id={id}>
+<div class="container" id={id}>
     <h3>{ title }</h3>
-    <div>
+    <div class="inner">
         <slot>
     </div>
-</section>
+</div>
 
 <style>
-    section {
+    .container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -18,7 +18,7 @@ const { title, id } = Astro.props;
         padding-top: 80px;
     }
     
-    div {
+    .inner {
         display: flex;
         flex-direction: column;
         gap: 32px;

@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Intro from "../components/Intro.astro";
+import Section from "../components/Section.astro";
 import TextBlock from "../components/TextBlock.astro";
 import Contents from "../components/Contents.astro";
 ---
@@ -26,23 +27,25 @@ import Contents from "../components/Contents.astro";
 
 	<Contents />
 
-	<TextBlock title="Start with the goals" id="goals">
-		<p>Before you design anything it is important to take a step back and think about what you want to achieve with the designed thing.</p>
-		<p>It is helpful to write down your goals and have them as a reference to evaluate your design along the way.</p>
-    </TextBlock>
-
-	<TextBlock title="Know your audience" id="audience">
-		<p>While you think about your goals you should also define the intended target audience your are talking to.</p>
-		<p>This will affect the words you should use for writing and the look and feel of the design.</p>
-    </TextBlock>
-
-	<TextBlock title="Prepare your design" id="preparation">
-		<p>Most of your design will be written words and images or graphics to support them. It helps a lot to create a rough outline of the thing you want to design to define what elements you need and where you might place them.</p>
-		<p>This can be done on a piece of paper, since it is quick and let’s you explore different options quickly.</p>
-    </TextBlock>
-
-	<TextBlock title="Words are important" id="writing">
-		<p>We use design techniques to ensure the message we want to communicate is best received by the audience.</p>
-		<p>Since most of the design is written word we should have it as final as possible when we start designing, so that we can support the content with how we design it.</p>
-    </TextBlock>
+	<Section chapter="Chapter 1" title="Preparation">
+		<TextBlock title="Start with the goals" id="goals">
+			<p>Before you design anything it is important to take a step back and think about what you want to achieve with the designed thing.</p>
+			<p>It is helpful to write down your goals and have them as a reference to evaluate your design along the way.</p>
+		</TextBlock>
+	
+		<TextBlock title="Know your audience" id="audience">
+			<p>While you think about your goals you should also define the intended target audience your are talking to.</p>
+			<p>This will affect the words you should use for writing and the look and feel of the design.</p>
+		</TextBlock>
+	
+		<TextBlock title="Prepare your design" id="preparation">
+			<p>Most of your design will be written words and images or graphics to support them. It helps a lot to create a rough outline of the thing you want to design to define what elements you need and where you might place them.</p>
+			<p>This can be done on a piece of paper, since it is quick and let’s you explore different options quickly.</p>
+		</TextBlock>
+	
+		<TextBlock title="Words are important" id="writing">
+			<p>We use design techniques to ensure the message we want to communicate is best received by the audience.</p>
+			<p>Since most of the design is written word we should have it as final as possible when we start designing, so that we can support the content with how we design it.</p>
+		</TextBlock>
+	</Section>
 </Layout>
