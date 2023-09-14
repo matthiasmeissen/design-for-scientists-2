@@ -1,11 +1,12 @@
 ---
+import Block from "./Block.astro";
 const { title, body } = Astro.props;
 ---
 
 <section>
     <h2>Index</h2>
-    <div class="columns">
-        <div class="column">
+    <Block>
+        <div slot = "first" class="column">
             <a class="body-l" href="#goals">Goals</a>
             <a class="body-l" href="#audience">Target Audience</a>
             <a class="body-l" href="#preparation">Preparation</a>
@@ -19,7 +20,7 @@ const { title, body } = Astro.props;
             <a class="body-l" href="#whitespace">Whitespace</a>
             <p class="body-l"></p>
         </div>
-        <div class="column">
+        <div slot = "second" class="column">
             <a class="body-l" href="#typography">Typography</a>
             <a class="body-l" href="#lineheight">Line Height</a>
             <a class="body-l" href="#linelength">Line Length</a>
@@ -43,7 +44,7 @@ const { title, body } = Astro.props;
             <a class="body-l" href="#textonimages">Text on Images</a>
             <a class="body-l" href="#colorcontrast">Color Contrast</a>
         </div>
-    </div>
+    </Block>
 </section>
 
 <style>
@@ -76,12 +77,6 @@ const { title, body } = Astro.props;
         outline: none;
         font-weight: var(--font-weight-bold);
         transform: scale(1.1);
-    }
-
-    .columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-l);
     }
 
     .column {
