@@ -33,6 +33,7 @@
     --font-size-s: 24px;
     --font-size-xs: 20px;
     --font-size-2xs: 18px;
+    --font-size-3xs: 16px;
 
     --spacing-3xs: 4px;
     --spacing-2xs: 8px;
@@ -121,4 +122,38 @@ li {
     font-size: var(--font-size-2xs);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-wide);
+}
+
+@media (max-width: 620px) {
+    .heading-xl {
+        font-size: var(--font-size-xl);
+    }
+    
+    .heading-l, h1 {
+        font-size: var(--font-size-l);
+    }
+    
+    .heading-m, h2 {
+        font-size: var(--font-size-m);
+    }
+    
+    .heading-s, h3 {
+        font-size: var(--font-size-s);
+    }
+    
+    .heading-xs, h4 {
+        font-size: var(--font-size-xs);
+    }
+    
+    .body-l {
+        font-size: var(--font-size-xs);
+    }
+    
+    .body-m, p, li {
+        font-size: var(--font-size-2xs);
+    }
+    
+    .body-s {
+        font-size: var(--font-size-3xs);
+    }
 }

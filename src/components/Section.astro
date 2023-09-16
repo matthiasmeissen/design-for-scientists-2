@@ -3,7 +3,7 @@ const { title, chapter } = Astro.props;
 ---
 
 <section>
-    <div>
+    <div class="container">
         <p>{ chapter }</p>
         <p>{ title }</p>
         <a href="#index">Index</a>
@@ -19,13 +19,14 @@ const { title, chapter } = Astro.props;
         gap: var(--spacing-xl);
     }
 
-    div {
+    .container {
         position: sticky;
         top: 0;
         z-index: 100;
         background-color: var(--color-background-primary);
         width: 100%;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: var(--spacing-l);
         padding: var(--spacing-m) 0;
         border-bottom: 1px solid var(--color-border-primary);
@@ -39,8 +40,25 @@ const { title, chapter } = Astro.props;
         position: absolute;
         top: 28px;
         right: 0;
+        color: var(--color-foreground-primary);
         text-decoration: none;
-        color: var(--color-text-primary);
+    }
+
+    @media (max-width: 1120px) {
+        .container {
+            grid-template-columns: 1fr 1.5fr;
+        }
+    }
+
+    @media (max-width: 620px) {
+        .container {
+            grid-template-columns: 1fr 2fr;
+            padding: var(--spacing-s) 0;
+        }
+
+        a {
+            top: 18px;
+        }
     }
 
 </style>

@@ -5,7 +5,7 @@ const { title, body } = Astro.props;
 
 <section id="index">
     <h2>Index</h2>
-    <Block>
+    <div class="container">
         <div slot = "first" class="column">
             <a class="body-l" href="#goals">Goals</a>
             <a class="body-l" href="#audience">Target Audience</a>
@@ -39,7 +39,7 @@ const { title, body } = Astro.props;
             <a class="body-l" href="#textonimages">Text on Images</a>
             <a class="body-l" href="#contrast">Contrast</a>
         </div>
-    </Block>
+    </div>
 </section>
 
 <style>
@@ -47,6 +47,12 @@ const { title, body } = Astro.props;
         width: 100%;
         padding-top: 80px;
         margin-top: -80px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-l);
     }
 
     h2 {
@@ -77,4 +83,17 @@ const { title, body } = Astro.props;
         flex-direction: column;
         gap: var(--spacing-xs);
     }
+
+    @media (max-width: 1120px) {
+        .container {
+            grid-template-columns: 1fr 1.5fr;
+        }
+    }
+
+    @media (max-width: 820px) {
+        .container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
 </style>
