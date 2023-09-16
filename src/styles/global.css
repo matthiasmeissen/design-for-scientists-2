@@ -99,7 +99,7 @@ li {
     line-height: var(--line-height-compact);
 }
 
-.heading-xs {
+.heading-xs, h4 {
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-compact);

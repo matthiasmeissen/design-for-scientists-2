@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Intro from "../components/Intro.astro";
 import Section from "../components/Section.astro";
 import TextBlock from "../components/TextBlock.astro";
+import DetailsBlock from "../components/DetailsBlock.astro";
 import Contents from "../components/Contents.astro";
 ---
 
@@ -32,4 +33,18 @@ import Contents from "../components/Contents.astro";
 			<p>Since most of the design is written word we should have it as final as possible when we start designing, so that we can support the content with how we design it.</p>
 		</TextBlock>
 	</Section>
+
+	<Section chapter="Chapter 2" title="Fundamental Concepts">
+		<DetailsBlock
+    		title = "Visual Hierarchy"
+    		body = "The principle of arranging elements to show their order of importance."
+    		titlegood = "Have a clear visual hierarchy"
+    		bodygood = "Use size and position to create different levels of importance in your design."
+    		imagegood = "/images/visual-hierarchy-good.svg"
+    		titlebad = "Avoid arbitrary placement of elements"
+    		bodybad = "When there is no visual hierarchy it is difficult for the viewer to understand that."
+    		imagebad = "/images/visual-hierarchy-bad.svg"
+		/>
+	</Section>
+
 </Layout>
