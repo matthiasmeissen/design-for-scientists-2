@@ -3,7 +3,7 @@ import Block from "./Block.astro";
 const { title, body } = Astro.props;
 ---
 
-<section>
+<section id="index">
     <h2>Index</h2>
     <Block>
         <div slot = "first" class="column">
@@ -45,6 +45,8 @@ const { title, body } = Astro.props;
 <style>
     section {
         width: 100%;
+        padding-top: 80px;
+        margin-top: -80px;
     }
 
     h2 {

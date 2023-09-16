@@ -34,7 +34,22 @@ import Contents from "../components/Contents.astro";
 		</TextBlock>
 	</Section>
 
-	<Section chapter="Chapter 2" title="Fundamental Concepts">
+	<Section chapter="Chapter 2" title="Principles">
+		<TextBlock title="Accessibility" id = "accessibility">
+			<p>There are people out there with different kind of abilities and we want to make sure that we reduce friction for them to consume our content.</p>
+		</TextBlock>
+
+		<TextBlock title="Simplicity" id = "simplicity">
+			<p>In order to do so we make our content and our design as simple as possible and show what is needed, when it is needed. This helps everyone to consume our content with ease.</p>
+		</TextBlock>
+
+		<TextBlock title="Iteration" id = "iteration">
+			<p>Almost nothing is done right the first time and this is especially true for design. Always start with a first idea and then make variations of it and see if you have improved on that.</p>
+			<p>Most of the time you should ask yourself what you can add or remove to communicate your message better.</p>
+		</TextBlock>
+	</Section>
+
+	<Section chapter="Chapter 3" title="Fundamental Concepts">
 		<DetailsBlock
     		title = "Visual Hierarchy"
     		body = "The principle of arranging elements to show their order of importance."
@@ -42,9 +57,21 @@ import Contents from "../components/Contents.astro";
     		bodygood = "Use size and position to create different levels of importance in your design."
     		imagegood = "/images/visual-hierarchy-good.svg"
     		titlebad = "Avoid arbitrary placement of elements"
-    		bodybad = "When there is no visual hierarchy it is difficult for the viewer to understand that."
+    		bodybad = "When there is no visual hierarchy it is difficult for the viewer to understand what you want to communicate."
     		imagebad = "/images/visual-hierarchy-bad.svg"
 			id = "visualhierarchy"
+		/>
+
+		<DetailsBlock
+    		title = "Whitespace"
+    		body = "The area between design elements."
+    		titlegood = "Leave space around elements"
+    		bodygood = "Use empty space in your design to give room for each element."
+    		imagegood = "/images/whitespace-good.svg"
+    		titlebad = "Avoid using all available space"
+    		bodybad = "When there is no space between elements the layout feels dense and is harder to understand."
+    		imagebad = "/images/whitespace-bad.svg"
+			id = "whitespace"
 		/>
 	</Section>
 

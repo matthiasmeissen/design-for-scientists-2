@@ -6,6 +6,7 @@ const { title, chapter } = Astro.props;
     <div>
         <p>{ chapter }</p>
         <p>{ title }</p>
+        <a href="#index">Index</a>
     </div>
     <slot />
 </section>
@@ -33,4 +34,13 @@ const { title, chapter } = Astro.props;
     p {
         width: 100%;
     }
+
+    a {
+        position: absolute;
+        top: 28px;
+        right: 0;
+        text-decoration: none;
+        color: var(--color-text-primary);
+    }
+
 </style>
