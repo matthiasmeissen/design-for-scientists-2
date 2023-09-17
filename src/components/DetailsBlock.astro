@@ -51,8 +51,8 @@ const {
     .detailsblock {
         display: flex;
         flex-direction: column;
-        gap: 120px;
-        padding-top: 120px;
+        gap: var(--spacing-4xl);
+        padding-top: var(--spacing-4xl);
     }
 
     h3 {
@@ -103,4 +103,29 @@ const {
         width: inherit;
         border-radius: 12px;
     }
+
+    @media (max-width: 820px) {
+        .detailsblock {
+            gap: var(--spacing-3xl);
+            padding: var(--spacing-2xl) 0;
+        }
+
+        h3 {
+            padding-right: 0;
+        }
+
+        .tag {
+            margin-bottom: 12px;
+        }
+
+        .tag > svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .text {
+            padding: 0 0 var(--spacing-m) 0;
+        }
+    }
+
 </style>
